@@ -21,9 +21,14 @@ kafka-topics --create --bootstrap-server localhost:29092 --replication-factor 3 
 tions 3 --topic meu-topico
 ```
 
-Listing a topic
+Listing topics
 ```
 kafka-topics --list --bootstrap-server localhost:29092
+```
+
+Describing a topic
+```
+kafka-topics --describe --bootstrap-server localhost:29092 --topic meu-topico
 ```
 
 Producing messages

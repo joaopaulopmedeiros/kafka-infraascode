@@ -38,5 +38,10 @@ kafka-console-producer --broker-list localhost:29092 --topic meu-topico
 
 Consuming messages
 ```
-kafka-console-consumer --bootstrap-server localhost:29092 --topic meu-topico
+kafka-console-consumer --bootstrap-server localhost:29092 --topic meu-topico --group a
+```
+
+Describing groups
+```
+kafka-consumer-groups --group a --bootstrap-server localhost:29092 --describe
 ```
